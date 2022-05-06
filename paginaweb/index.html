@@ -1,20 +1,58 @@
 <!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="Utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pagina Web</title>
-    <link rel="stylesheet" href="css/estilos.css">
+<html lang="en">
+<head >
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Koulen&family=Merriweather:ital,wght@1,300&display=swap" rel="stylesheet">
 
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"  href="css/estilos.css">
+    <title>Pagina Front</title>
 </head>
-<body>
-    <h1>title: "Mercury's Sodium Tail" </h1>
-    <h2>"Sebastian Voltmer"</h2>
-    <h2>date: </h2> <p>"2022-05-03"</p>
-    <h2>explanation: </h2> <span> "That's no comet. Below the Pleiades star cluster is actually a planet: Mercury. Long exposures of our Solar System's innermost planet ma…"</span>
-    <h2>hdurl: </h2> <img>"https://apod.nasa.gov/apod/image/2205/MercuryTailPleiades_Voltmer_1448.jpg"</img>
-    <h2>media_type:</h2> <span>"image"</span>    
- 
+<body class="body">
+
+    
+
+<div class="container">
+
+    <header>
+        <input class="search" type="text" placeholder="Fecha">
+        <button class="button" type="text" placeholder="Buscar"> </button>
+    </header>
+
+    <div class="divDesc">
+        <h2 class="desc">THE ASTRONOMY PICTURE OF THE DAY</h2>
+    </div>
+
+  <article class="article">
+
+    <img class="image" src="https://apod.nasa.gov/apod/image/2205/MercuryTailPleiades_Voltmer_1448.jpg">
+
+    <div id="title"><h2 class="title">Mercury Tail Pleiades Voltmer</h2></div>
+        
+
+        <div class="info">
+
+        <h2 class="copyright">copyright:  Dr. Sebastian Voltmer</h2>
+        
+        <p class="explain">“This is NOT a comet, not even a meteor, but the planet Mercury, which is currently very close to the Pleiades,” says Voltmer. “How is the tail formed? The solar wind and micro-meteorites eject sodium atoms from Mercury’s surface. This creates a yellow-orange tail of sodium gas that is around 24 million kilometers long.”</p>
+        
+    </div>
+   </article>
+    
+</div>
+<script src="codigo.js">
+
+var elemento = document.getElementById("title");
+elemento.style.color = "red";
+
+</script>
+
+
+
+
 </body>
 </html>
-<script src="./js/index.js"></script>
